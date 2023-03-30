@@ -1,0 +1,35 @@
+.showData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.showData .show span{
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+} 
+.showData .show{
+    font-size: 22px;
+    color: #2924b0;
+    font-weight: bold;
+    font-style: italic;
+} 
+.showData .status span{
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+}
+
+.showData .status.green{
+    font-size: 22px;
+    color: #2bb726;
+    font-weight: bold;
+    font-style: italic;
+}
+.showData .status.red{
+    font-size: 22px;
+    color: #9f2424;
+    font-weight: bold;
+    font-style: italic;
+}
