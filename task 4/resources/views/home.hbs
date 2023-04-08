@@ -1,0 +1,61 @@
+{{>header}}
+
+    {{>nav}}
+    <section class="container my-5">
+        <div class="d-flex justify-content-end mb-4">
+            <a href="/deleteAll" class="btn btn-danger ">
+                Delete All
+            </a>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>id</th>
+                    <th>Title</th>
+                    <th colspan="3">content</th>
+                    <td>Status</td>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#if hasData}}
+                {{#each data}}
+                <tr>
+                    <td class="d-flex  justify-content-center align-items-center">
+                        {{#if finish}}
+                       <input class="form-check-input mt-1" type="checkbox" onchange="window.location.href = '/activate/{{_id}}';" checked>
+                       {{else}}
+                       <input class="form-check-input mt-1" type="checkbox" onchange="window.location.href = '/activate/{{_id}}';">
+                    {{/if}}
+                    </td>
+                    <td>{{_id}}</td>
+                    <td>{{title}}</td>
+                    <td colspan="3">{{content}}</td>
+                    <td >
+                        {{#if finish}}
+                        <p class="text-success">{{status}}</p>
+                        {{else}}
+                        <p class="text-danger">{{status}}</p>
+                        {{/if}}
+                        </td>
+                        <td>
+                            {{date}}
+                        </td>
+                    <td class="d-flex  justify-content-around align-items-center">
+                        <a href="/single/{{_id}}" class="btn btn-primary mx-3">Show</a>
+                        <a href="/edit/{{_id}}" class="btn btn-warning mx-3">Edit</a>
+                        <a href="/delete/{{_id}}" class="btn btn-danger mx-3">Delete</a>
+                    </td>
+                </tr>
+                {{/each}}
+                {{else}}
+                <tr>
+                    <td colspan="9">No todo found</td>
+                </tr>
+                {{/if}}
+            </tbody>
+        </table>
+    </section>
+{{>footer}}

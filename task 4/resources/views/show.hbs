@@ -1,0 +1,19 @@
+{{>header}}
+    {{>nav}}
+    <section class="my-5 text-center p-5 container
+    w-50 mx-auto ">
+        <div class="card text-center">
+            <div class="card-header">
+                TODO
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{todo.title}}</h5>
+                <p class="card-text">{{todo.content}}</p>
+                <a href="/" class="btn btn-primary">Go Home</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                {{todo.date}}
+            </div>
+        </div>
+    </section>
+{{>footer}}
