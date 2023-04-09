@@ -1,0 +1,27 @@
+{{>header}}
+    {{>nav}}
+
+    <section class="container my-5">
+        <h2>edit Todo</h2>
+        <form action="/editLogic/{{todo._id}}">
+            <div class="mb-3">
+                <input name="title" class="form-control" placeholder="name" value="{{todo.title}}" required>
+            </div>
+            <div class="mb-3">
+                <input name="content" class="form-control" placeholder="email" value="{{todo.content}}" required>
+            </div>
+            <div class="mb-3">
+                <select class="form-select" id="floatingSelectDisabled"
+                    aria-label="Floating label disabled select example" name="status" required>
+
+                    <option selected value="Completed">Completed </option>
+                    <option value="In Progress">In Progress</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary">Update</button>
+            </div>
+        </form>
+    </section>
+
+{{>footer}}
