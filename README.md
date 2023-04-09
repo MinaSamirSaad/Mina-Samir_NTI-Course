@@ -7,3 +7,5 @@
 [Task 3](https://github.com/MinaSamirSaad/Mina-Samir_NTI-Course/tree/main/task%203) : a simple Todo app using nodeJS and Express to manage data and edit it in JSON file and display it with "HBS" view engine
 
 [Task 4](https://github.com/MinaSamirSaad/Mina-Samir_NTI-Course/tree/main/task%204) : a simple Todo app using nodeJS and Express to manage data and edit it using MongoDB and display it with "HBS" view engine
+
+[Task 5](https://github.com/MinaSamirSaad/Mina-Samir_NTI-Course/tree/main/task%205) : a simple Todo app using nodeJS and Express to manage data and edit it using Mongoose and display it with "HBS" view engine
