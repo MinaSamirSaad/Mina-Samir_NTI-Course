@@ -9,3 +9,7 @@
 [Task 4](https://github.com/MinaSamirSaad/Mina-Samir_NTI-Course/tree/main/task%204) : a simple Todo app using nodeJS and Express to manage data and edit it using MongoDB and display it with "HBS" view engine
 
 [Task 5](https://github.com/MinaSamirSaad/Mina-Samir_NTI-Course/tree/main/task%205) : a simple Todo app using nodeJS and Express to manage data and edit it using Mongoose and display it with "HBS" view engine
+
+[Angular Task 1](https://github.com/MinaSamirSaad/Mina-Samir_NTI-Course/tree/main/Angular%20task%201%20--%3E%20filter%20posts) : a simple Angular app that has search input to search inside array data and displays them
+
+[Angular Task 2](https://github.com/MinaSamirSaad/Mina-Samir_NTI-Course/tree/main/Angular%20task%202%20--%3E%20update%20and%20delete%20users) : Angular app that takes the user name and email and displays it in table and you can update data or remove it
